@@ -28,8 +28,10 @@ ul {
     background-image: url(img/baground__image.png);
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 170px;
-    min-width: 170px;
+    min-height: 160px;
+    min-width: 142px;
+    margin-top: auto;
+    margin-bottom: auto;
  }
 
  .list {
@@ -41,11 +43,20 @@ ul {
  .list-two {
     justify-content: space-between;
  }
+ .list__tree{
+   flex-direction: column;
+   align-items: flex-start;
+ }
+ 
+ .button{
+   margin-top: 70px;
+ }
 
  .subtitle__one {
     color: #2E2B44;
     font-weight: 700;
     font-size: 40px;
+    max-width: 450px;
  }
 
  .subtitle__two {
@@ -55,6 +66,7 @@ ul {
  }
  .subtitle__two{
    padding-top: 30px;
+   font-size: 40px;
  }
 
  .background__two {
@@ -64,7 +76,6 @@ ul {
  }
 
  .container__two {
-    padding-top: 210px;
     padding-bottom: 130px;
     margin-bottom: 50px;
     background-image: url("img/container__two__image.png");
@@ -152,6 +163,7 @@ ul {
  .teachers__container {
     background-color: #212133;
     margin-bottom: 50px;
+    padding-bottom: 50px;
  }
 
  .teachers__blocks {
@@ -190,11 +202,15 @@ ul {
  .teacher__content__two .teachers__block__subtitle{
    padding-top: 8px;
  }
+ p:not(.course__text){
+   margin: auto -15px;
+ }
 
  .teaters__block__text {
     color: #85859B;
     font-size: 16px;
     font-weight: 400;
+    padding: 0;
  }
 
  .teachers__block__subtitle {
@@ -212,12 +228,12 @@ ul {
 
  .course__blocks {
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
     columns: 2;
+    margin: 0 -15px;
  }
 
- .course_block {
+ .course_block{
     border-radius: 20px;
     padding: 30px;
     position: relative;
@@ -230,7 +246,7 @@ ul {
     justify-content: space-between;
  }
 
- .course_block:nth-child(1) {
+ .course__block__two:nth-child(1) > .course_block{
     background-color: #F6C055;
     background-image: url("img/course__background__one.png");
     background-repeat: no-repeat;
@@ -239,7 +255,7 @@ ul {
     padding-top: 365px;
  }
 
- .course_block:nth-child(2) {
+ .course__block__two:nth-child(2) > .course_block{
     background-color: #212133;
     background-image: url("img/course__backgroud__two.png");
     background-repeat: no-repeat;
@@ -248,7 +264,7 @@ ul {
     padding-top: 365px;
  }
 
- .course_block:nth-child(3) {
+ .course__block__two:nth-child(3) > .course_block{
     background-color: #1188E4;
     background-image: url("img/course__background__tree.png");
     background-repeat: no-repeat;
@@ -257,8 +273,11 @@ ul {
     padding-top: 365px;
 
  }
+ .course__block__two:nth-child(2){
+   margin-bottom: 30px;
+ }
 
- .course_block:nth-child(4) {
+ .course__block__two:nth-child(4) > .course_block{
     background-color: #6DA71D;
     background-image: url("img/course__background__four.png");
     background-repeat: no-repeat;
@@ -288,7 +307,7 @@ ul {
  .text__time {
     color: #fff;
     position: absolute;
-    left: 370px;
+    left: 450px;
     top: 0;
     background-image: url("img/mdi_access_time.svg");
     background-repeat: no-repeat;
@@ -323,35 +342,35 @@ ul {
     justify-content: center;
  }
 
- .social:nth-child(1) {
+ .link__two:nth-child(1) > .social{
     background-image: url("img/social__four.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
  }
 
- .social:nth-child(2) {
+   .link__two:nth-child(2) > .social{
     background-image: url("img/social__tree.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 24px;
-    height: 24px;
+    height: 24px; 
  }
 
- .social:nth-child(3) {
+ .link__two:nth-child(3) > .social{
     background-image: url("img/social__two.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
+    background-size: cover; 
+    min-width: 30px;
+    min-height: 24px;
  }
 
- .social:nth-child(4) {
+ .link__two:nth-child(4) > .social{
     background-image: url("img/social__one.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 24px;
+    width: 28px;
     height: 24px;
  }
 
