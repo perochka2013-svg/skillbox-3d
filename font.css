@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'roboto'; /* Имя, которым будете называть шрифт */
+  src: url('fonts/webfonts/roboto-cyrillic-400-normal.woff') format('woff'); /* Относительный путь к файлу */
+  src: url('fonts/webfonts/roboto-cyrillic-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto'; /* Имя, которым будете называть шрифт */
+  src: url('fonts/webfonts/roboto-cyrillic-700-normal.woff') format('woff'); /* Относительный путь к файлу */
+  src: url('fonts/webfonts/roboto-cyrillic-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto'; /* Имя, которым будете называть шрифт */
+  src: url('fonts/webfonts/roboto-latin-400-normal.woff') format('woff'); /* Относительный путь к файлу */
+  src: url('fonts/webfonts/roboto-latin-400-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'roboto'; /* Имя, которым будете называть шрифт */
+  src: url('fonts/webfonts/roboto-latin-700-normal.woff') format('woff'); /* Относительный путь к файлу */
+  src: url('fonts/webfonts/roboto-latin-700-normal.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+body{
+    font-family: 'roboto' sans-serif;
+}
+
+body{
+    font-family: 'roboto';
+}
