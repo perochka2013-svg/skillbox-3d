@@ -638,7 +638,7 @@ nav li:active {
 
 
 
-@media ((min-width:576px) and (max-width:1440px)) {
+@media ((min-width:576px) and (max-width:765px)) {
    h1 .title {
       font-size: 50px;
       margin-bottom: 15px;
@@ -975,7 +975,7 @@ nav li:active {
    }
 }
 
-@media ((min-width:576px) and (max-width:1440px)) {
+@media ((min-width:576px) and (max-width:765px)) {
    .advantages__blocks {
       flex-wrap: nowrap;
       flex-direction: row;
@@ -1009,4 +1009,89 @@ nav li:active {
       background-position-x: left;
    }
 
+}
+@media ((min-width:767px) and (max-width:1439px)) {
+   .container .list-two > .background__container{
+      background-size: contain;
+      min-width: 311px;
+      min-height: 342px;
+      margin-top: 101px;
+   }
+   .title{
+      font-size: 50px;
+      margin-bottom: 12px;
+   }
+   .container__two__text{
+      max-width: 340px;
+      min-width: unset;
+   }
+   .content__part__one > .container__two__text {
+      margin-left: 0;
+   }
+   .container__two{
+      padding-bottom: 135px;
+   }
+   .background__one{
+      min-height: 211px;
+      min-width: 187px;
+      margin-right: 53px;
+   }
+   .content__part__one{
+      padding-top: 128px;
+   }
+   .list__tree > .advantages__text{
+      margin-left: 0;
+   }
+   .advantages__blocks{
+      gap: 36px;
+   }
+   .advantages__block:nth-child(1){
+      background-position: top;
+      background-position-x: left;
+      padding-left: 0;
+      padding-top: 95px;
+      padding-bottom: 0;
+      background-size: auto;
+      max-width: 205px;
+   }
+   .advantages__block:nth-child(2){
+      background-position: top;
+      background-position-x: left;
+      padding-left: 0;
+      padding-top: 95px;
+      padding-bottom: 0;
+      background-size: auto;
+      max-width: 205px;
+   }
+   .advantages__block:nth-child(3){
+      background-position: top;
+      background-position-x: left;
+      padding-left: 0;
+      padding-top: 95px;
+      padding-bottom: 0;
+      background-size: auto;
+      max-width: 205px;
+   }
+   .teaters__block__text{
+      min-width: 351px;
+   }
+   .teacher__block:nth-child(1){
+      margin-bottom: 22px;
+   }
+
+   .course__text{
+      max-width: 270px;
+   }
+   .course__content{
+      min-height: 379px;
+   }
+   .text__time{
+      left: 240px;
+   }
+   .course__container{
+      padding-bottom: 32px;
+   }
+   .socials{
+      padding: 25px;
+   }
 }
