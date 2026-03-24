@@ -136,8 +136,8 @@ p {
    line-height: 152%;
    /* padding-bottom: 60px; */
    /* padding-bottom: 0; */
-   min-width: 500px;
    padding-bottom: 60px;
+   max-width: 450px;
 }
 
 .advantages__container {
@@ -151,7 +151,7 @@ p {
 }
 
 .advantages__text {
-   max-width: 637px;
+   max-width: 600px;
 }
 
 .advantages__block {
@@ -304,7 +304,7 @@ button {
 }
 
 p:not(.course__text) {
-   margin: auto -15px;
+   margin: auto 0;
 }
 
 .teaters__block__text {
@@ -313,7 +313,7 @@ p:not(.course__text) {
    font-weight: 400;
    padding: 0;
    padding-right: 0;
-   max-width: 265px;
+   max-width: 250px;
 }
 
 .teachers__block__subtitle {
@@ -348,7 +348,7 @@ p:not(.course__text) {
 }
 
 .course__container  > .container  > .subtitle__one {
-   margin-bottom: 20px;
+   margin-bottom: 23px;
 }
 
 .course__blocks {
@@ -483,29 +483,40 @@ p:not(.course__text) {
 .text__time {
    color: #fff;
    position: absolute;
-   left: 450px;
+   left: 440px;
    top: 0;
    background-image: url("img/mdi_access_time.svg");
    background-repeat: no-repeat;
    padding-left: 25px;
    background-position: left;
-   top: 12px;
-   left: 455px;
+   top: 10px;
+   left: 440px;
    padding-left: 30px;
 }
 
 .course__text {
    color: #666666;
    max-width: 475px;
+   font-weight: 400;
+   margin-top: 0;
 }
 
 .course__subtitle {
    color: #212133;
    font-weight: 700;
-   font-size: 18px;
-   font-size: 16px;
    line-height: 150%;
    margin-top: 0;
+   font-size: 16px;
+}
+
+.course__content > .content > h3{
+   font-size: 18px;
+}
+.content > .part__one > h3{
+   font-size: 18px;
+}
+.part__two > h3{
+   font-size: 18px;
 }
 
 button {
@@ -539,7 +550,7 @@ button {
    background-position: center;
 }
 
-.link__two:nth-child(2) >.social {
+.link__two:nth-child(3) >.social {
    background-image: url("img/social__tree.svg");
    background-repeat: no-repeat;
    background-size: cover;
@@ -550,7 +561,7 @@ button {
    background-position: center;
 }
 
-.link__two:nth-child(3) >.social {
+.link__two:nth-child(4) >.social {
    background-image: url("img/social__two.svg");
    background-repeat: no-repeat;
    background-size: cover;
@@ -561,7 +572,7 @@ button {
    background-position: center;
 }
 
-.link__two:nth-child(4) >.social {
+.link__two:nth-child(2) >.social {
    background-image: url("img/social__one.svg");
    background-repeat: no-repeat;
    background-size: cover;
@@ -603,7 +614,9 @@ nav li:active {
    border-bottom: solid #85859B;
    color: #85859B;
 }
-
+nav li:last-child{
+   margin-right: -3px;
+}
 .course__content {
    min-height: 300px;
    /* padding-left: 30px; */
@@ -665,6 +678,18 @@ nav li:active {
       padding-top: 75px;
    }
 
+   .teacher__block:first-child{
+      margin-bottom: 27px;
+   }
+
+   .teachers__container{
+      padding-bottom: 78px;
+   }
+
+   .subtitle__two{
+      padding-top: 37px;
+   }
+
    .course__content {
       min-height: 410px;
    }
@@ -684,8 +709,23 @@ nav li:active {
       padding-left: 0;
    }
    .teachers__container{
-      padding-bottom: 50px;
+      padding-bottom: 78px;
    }
+   
+   .course__text{
+      max-width: 180px;
+   }
+
+   .course__button{
+      padding: 17px 45px;
+   }
+
+   .course__content{
+      min-height: 473px;
+      width: 100%;
+      margin-bottom: 0px;
+   }
+
    .background__container {
       display: none;
    }
@@ -707,7 +747,7 @@ nav li:active {
    }
    .advantages__text{
       max-width: 100%;
-      line-height: 144%;
+      line-height: 151%;
       margin-left: 0;
    }
    .background__one{
@@ -717,22 +757,25 @@ nav li:active {
       margin-bottom: 35px;
    }
    .advantages__blocks{
-      gap: 22px;
+      gap: 29px;
    }
    .list__tree > .advantages__text{
       margin-left: 0;
    }
    .advantages__blocks > .advantages__block:nth-child(1){
-      padding-top: 85px;
+      padding-top: 97px;
       max-width: 150px;
    }
    .advantages__blocks > .advantages__block:nth-child(2){
-      padding-top: 85px;
+      padding-top: 97px;
       max-width: 150px;
    }
    .advantages__blocks > .advantages__block:nth-child(3){
-      padding-top: 85px;
+      padding-top: 97px;
       max-width: 150px;
+   }
+   .course__container{
+      margin-bottom: 45px;
    }
 }
 
@@ -971,46 +1014,68 @@ nav li:active {
    }
 
    .text__time {
-      left: 70%;
+      left: 190px;
    }
 }
 
 @media ((min-width:576px) and (max-width:765px)) {
+  
    .advantages__blocks {
       flex-wrap: nowrap;
       flex-direction: row;
    }
 
+   header > .list-two{
+      gap: 12px;
+   }
+
    .advantages__block:nth-child(1) {
       background-size: auto;
       padding-left: 0;
-      padding-top: 110px;
+      padding-top: 97px;
       background-position: top;
       background-position-x: left;
    }
+   
+   .container__two__text{
+      max-width: 340px;
+      padding-bottom: 60px;
+   }
 
    .text__time {
-      left: 160px;
+      left: 136px;
    }
 
    .advantages__block:nth-child(2) {
       background-size: auto;
       padding-left: 0;
-      padding-top: 110px;
+      padding-top: 97px;
       background-position: top;
       background-position-x: left;
+   }
+
+   .course__block__two::nth-child(2){
+      padding-bottom: 35px;
+   }
+
+   .title{
+      margin-bottom: 16px;
+   }
+
+   .background__one{
+      margin-right: 19px;
    }
 
    .advantages__block:nth-child(3) {
       background-size: auto;
       padding-left: 0;
-      padding-top: 110px;
+      padding-top: 97px;
       background-position: top;
       background-position-x: left;
    }
 
 }
-@media ((min-width:767px) and (max-width:1439px)) {
+@media ((min-width:767px) and (max-width:1024px)) {
    .container .list-two > .background__container{
       background-size: contain;
       min-width: 311px;
@@ -1073,7 +1138,8 @@ nav li:active {
       max-width: 205px;
    }
    .teaters__block__text{
-      min-width: 351px;
+      min-width: 340px;
+      max-width: 365px;
    }
    .teacher__block:nth-child(1){
       margin-bottom: 22px;
@@ -1086,7 +1152,7 @@ nav li:active {
       min-height: 379px;
    }
    .text__time{
-      left: 240px;
+      left: 225px;
    }
    .course__container{
       padding-bottom: 32px;
