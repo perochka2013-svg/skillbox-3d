@@ -825,6 +825,8 @@ nav li:last-child{
       padding-bottom: 55px;
       min-width: 290px;
       padding-right: 0;
+      font-size: 16px;
+      padding-bottom: 108px;
    }
 
    .container__two >.container__two__text {
@@ -898,7 +900,7 @@ nav li:last-child{
    }
 
    .container >.advantages__blocks {
-      gap: 28px;
+      gap: 23px;
    }
 
    main >.teachers__container {
